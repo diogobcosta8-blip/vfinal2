@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orbital Sound — Caixa de Som com Levitação Magnética</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">Orbital<span>Sound</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="#solucao">A solução</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#specs">Ficha técnica</a>
+      <a href="#waitlist" class="nav-cta">Entrar na lista</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="orbit-scene" aria-hidden="true">
+      <div class="orbit-ring ring1"></div>
+      <div class="orbit-ring ring2"></div>
+      <div class="orbit-base"></div>
+      <div class="orbit-speaker"></div>
+    </div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Som que flutua, literalmente</p>
+      <h1>Uma caixa de som que <em>paira</em> sobre a base enquanto carrega.</h1>
+      <p class="hero-lead">Orbital Sound usa levitação magnética para manter o alto-falante suspenso e girando devagar, recarregando por indução o tempo todo — sem fios, sem apoio, sem barulho de base tocando a mesa.</p>
+      <div class="hero-actions">
+        <a href="#waitlist" class="btn btn-primary">Entrar na lista de espera</a>
+        <a href="#solucao" class="btn btn-ghost">Ver como funciona</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="problema wrap">
+    <h2>Caixas de som boas existem. Bases elegantes, nem tanto.</h2>
+    <div class="problema-grid">
+      <div class="problema-item">
+        <span class="numero">1</span>
+        <p>Carregadores por indução comuns exigem contato direto — a caixa precisa ficar imóvel, encostada.</p>
+      </div>
+      <div class="problema-item">
+        <span class="numero">2</span>
+        <p>Som que sai de um ponto fixo na mesa perde presença em ambientes maiores.</p>
+      </div>
+      <div class="problema-item">
+        <span class="numero">3</span>
+        <p>A maioria dos gadgets "futuristas" é só estética — não muda a experiência de uso.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="solucao" class="solucao">
+    <div class="wrap">
+      <h2>Duas engenharias, um objeto flutuante</h2>
+      <div class="cards">
+        <article class="card card-levitacao">
+          <h3>Levitação magnética ativa</h3>
+          <p>Um campo eletromagnético na base mantém o alto-falante suspenso a cerca de 3 cm, girando lentamente 360°, distribuindo o som pelo ambiente.</p>
+        </article>
+        <article class="card card-inducao">
+          <h3>Recarga por indução contínua</h3>
+          <p>A mesma base que sustenta o campo magnético transmite energia por indução — a bateria carrega mesmo com a caixa flutuando e girando.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="como-funciona wrap">
+    <h2>Como funciona</h2>
+    <ol class="passos">
+      <li><span class="passo-num">01</span><div><h4>Posicione sobre a base</h4><p>Os ímãs se alinham sozinhos e o alto-falante começa a levitar em segundos.</p></div></li>
+      <li><span class="passo-num">02</span><div><h4>Conecte por Bluetooth</h4><p>Toque para parear e o som já sai enquanto a caixa gira suavemente.</p></div></li>
+      <li><span class="passo-num">03</span><div><h4>Deixe recarregando</h4><p>Mesmo flutuando, a indução mantém a bateria cheia para o próximo uso.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="demo wrap">
+    <h2>Experimente o controle de volume flutuante</h2>
+    <p>Arraste o controle para ver o alto-falante reagir, como se estivesse girando mais rápido em volumes mais altos.</p>
+    <div class="demo-box">
+      <div class="demo-orbita">
+        <div class="demo-anel"></div>
+        <div class="demo-speaker" id="demoSpeaker"></div>
+      </div>
+      <div class="demo-info">
+        <label for="demoVolume">Volume</label>
+        <input type="range" id="demoVolume" min="0" max="100" value="30">
+        <p><strong id="demoValor">30</strong>%</p>
+        <p class="demo-mensagem" id="demoMensagem" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="specs" class="specs">
+    <div class="wrap">
+      <h2>Ficha técnica</h2>
+      <dl class="specs-grid">
+        <div><dt>Potência</dt><dd>20W RMS, som 360°</dd></div>
+        <div><dt>Levitação</dt><dd>Campo eletromagnético ativo, altura de ~3 cm</dd></div>
+        <div><dt>Bateria</dt><dd>10 horas de uso, recarga por indução contínua</dd></div>
+        <div><dt>Conectividade</dt><dd>Bluetooth 5.2</dd></div>
+        <div><dt>Material</dt><dd>Alumínio escovado e tecido acústico</dd></div>
+        <div><dt>Peso da base</dt><dd>480 g — mantém a estabilidade do campo</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="waitlist" class="waitlist">
+    <div class="wrap waitlist-inner">
+      <h2>Seja avisado do lançamento</h2>
+      <p>Deixe seu e-mail e avisamos assim que a Orbital Sound estiver disponível para pré-venda.</p>
+      <form id="waitlistForm" class="waitlist-form" novalidate>
+        <label for="email" class="sr-only">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+        <button type="submit" class="btn btn-primary">Entrar na lista</button>
+      </form>
+      <p class="form-feedback" id="formFeedback" role="status"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Orbital Sound é um produto conceito, criado para fins acadêmicos.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

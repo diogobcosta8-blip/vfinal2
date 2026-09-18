@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HydroSmart — Garrafa com Esterilização UV e Rastreador</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="brand">Hydro<span>Smart</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="#solucao">A solução</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#specs">Ficha técnica</a>
+      <a href="#waitlist" class="nav-cta">Entrar na lista</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <svg class="hero-ripple" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle class="ripple r1" cx="620" cy="180" r="60" />
+      <circle class="ripple r2" cx="620" cy="180" r="110" />
+      <circle class="ripple r3" cx="620" cy="180" r="160" />
+      <path d="M 590 250 C 590 200 650 200 650 250 C 650 300 590 320 590 360 C 590 400 650 400 650 360" class="uv-path" />
+    </svg>
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Água limpa, hidratação em dia</p>
+      <h1>A garrafa que purifica a própria água <em>enquanto você vive</em>.</h1>
+      <p class="hero-lead">HydroSmart usa uma luz UV-C interna para eliminar até 99,9% de bactérias a cada enchimento, e lembra você de beber água no ritmo certo para o seu dia.</p>
+      <div class="hero-actions">
+        <a href="#waitlist" class="btn btn-primary">Entrar na lista de espera</a>
+        <a href="#solucao" class="btn btn-ghost">Ver como funciona</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="problema wrap">
+    <h2>Encher a garrafa não é o problema. Lembrar de bebê-la, é.</h2>
+    <div class="problema-grid">
+      <div class="problema-item">
+        <span class="numero">1</span>
+        <p>Garrafas reutilizáveis acumulam bactérias em poucos dias sem uma limpeza adequada.</p>
+      </div>
+      <div class="problema-item">
+        <span class="numero">2</span>
+        <p>A maioria das pessoas bebe menos da metade da água recomendada por dia.</p>
+      </div>
+      <div class="problema-item">
+        <span class="numero">3</span>
+        <p>Aplicativos de hidratação exigem que você registre tudo manualmente — e você esquece.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="solucao" class="solucao">
+    <div class="wrap">
+      <h2>Duas tecnologias, uma garrafa</h2>
+      <div class="cards">
+        <article class="card card-uv">
+          <h3>Esterilização UV-C</h3>
+          <p>Um LED UV-C na tampa trata a água e as paredes internas a cada enchimento, sem produtos químicos e sem sabor residual.</p>
+        </article>
+        <article class="card card-track">
+          <h3>Rastreador de hidratação</h3>
+          <p>Sensores de nível registram cada gole e enviam lembretes discretos — uma luz suave na base — no seu ritmo, não em horários fixos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" class="como-funciona wrap">
+    <h2>Como funciona</h2>
+    <ol class="passos">
+      <li><span class="passo-num">01</span><div><h4>Encha a garrafa</h4><p>A esterilização UV-C começa automaticamente assim que a tampa é fechada.</p></div></li>
+      <li><span class="passo-num">02</span><div><h4>Beba normalmente</h4><p>Os sensores acompanham quanto você bebeu ao longo do dia.</p></div></li>
+      <li><span class="passo-num">03</span><div><h4>Receba o lembrete certo</h4><p>Uma luz na base pulsa suavemente quando é hora de beber mais água.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="demo wrap">
+    <h2>Experimente o contador de hidratação</h2>
+    <p>Uma simulação simples de como o rastreador acompanha sua ingestão de água ao longo do dia.</p>
+    <div class="demo-box">
+      <div class="demo-copo" id="demoCopo">
+        <div class="agua" id="demoAgua"></div>
+      </div>
+      <div class="demo-info">
+        <p><strong id="demoContagem">0</strong> ml de <span id="demoMeta">2000</span> ml de hoje</p>
+        <button class="btn btn-primary" id="demoBeber">+ 250 ml</button>
+        <button class="btn btn-ghost" id="demoReset">Reiniciar</button>
+        <p class="demo-mensagem" id="demoMensagem" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="specs" class="specs">
+    <div class="wrap">
+      <h2>Ficha técnica</h2>
+      <dl class="specs-grid">
+        <div><dt>Capacidade</dt><dd>590 ml</dd></div>
+        <div><dt>Esterilização</dt><dd>LED UV-C, ciclo de 90 segundos</dd></div>
+        <div><dt>Bateria</dt><dd>Até 30 dias por carga, USB-C</dd></div>
+        <div><dt>Material</dt><dd>Aço inoxidável de parede dupla</dd></div>
+        <div><dt>Conectividade</dt><dd>Bluetooth 5.0 + app HydroSmart</dd></div>
+        <div><dt>Resistência</dt><dd>IP67 — respinos e imersão leve</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="waitlist" class="waitlist">
+    <div class="wrap waitlist-inner">
+      <h2>Seja avisado do lançamento</h2>
+      <p>Deixe seu e-mail e avisamos assim que o HydroSmart estiver disponível para pré-venda.</p>
+      <form id="waitlistForm" class="waitlist-form" novalidate>
+        <label for="email" class="sr-only">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+        <button type="submit" class="btn btn-primary">Entrar na lista</button>
+      </form>
+      <p class="form-feedback" id="formFeedback" role="status"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>HydroSmart é um produto conceito, criado para fins acadêmicos.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

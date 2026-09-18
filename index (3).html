@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VisionAR Glass — Óculos de Realidade Aumentada</title>
+<meta name="description" content="VisionAR Glass: óculos inteligentes com GPS, notificações e tradução de idiomas em tempo real nas lentes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo"><span class="logo-dot"></span>VisionAR Glass</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#specs">Especificações</a></li>
+        <li><a href="#reservar">Reservar</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <a href="#reservar" class="btn btn-primary">Reservar agora</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">VisionAR Glass · lançamento 2027</span>
+      <h1>Veja o caminho, o idioma e o aviso — sem tirar os olhos do mundo</h1>
+      <p>Óculos ultraleves que projetam navegação por GPS, notificações e tradução de idiomas em tempo real direto na lente, para você continuar de olho no que importa: o que está na sua frente.</p>
+      <div class="hero-actions">
+        <a href="#reservar" class="btn btn-primary">Entrar na lista de espera</a>
+        <a href="#recursos" class="btn btn-ghost">Ver recursos</a>
+      </div>
+      <div class="hero-meta">
+        <div><strong>38g</strong><span>peso total</span></div>
+        <div><strong>18h</strong><span>bateria em uso normal</span></div>
+        <div><strong>32</strong><span>idiomas traduzidos</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustração dos óculos VisionAR Glass">
+        <defs>
+          <linearGradient id="lens" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#39d2c0" stop-opacity="0.55"/>
+            <stop offset="100%" stop-color="#39d2c0" stop-opacity="0.08"/>
+          </linearGradient>
+        </defs>
+        <rect x="0" y="0" width="480" height="320" fill="none"/>
+        <!-- bridge -->
+        <path d="M215 150 Q240 130 265 150" stroke="#8996a8" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <!-- left lens -->
+        <rect x="70" y="110" width="145" height="90" rx="24" fill="url(#lens)" stroke="#39d2c0" stroke-width="2.5"/>
+        <!-- right lens -->
+        <rect x="265" y="110" width="145" height="90" rx="24" fill="url(#lens)" stroke="#39d2c0" stroke-width="2.5"/>
+        <!-- temples -->
+        <path d="M70 140 L18 128" stroke="#8996a8" stroke-width="4" stroke-linecap="round"/>
+        <path d="M410 140 L462 128" stroke="#8996a8" stroke-width="4" stroke-linecap="round"/>
+        <!-- glow center dot -->
+        <circle cx="142" cy="155" r="5" fill="#39d2c0"/>
+        <circle cx="338" cy="155" r="5" fill="#39d2c0"/>
+      </svg>
+
+      <div class="chip chip-gps"><span class="led"></span>Rota em 300m: vire à direita</div>
+      <div class="chip chip-translate"><span class="led"></span>Tradução: "Onde fica a estação?"</div>
+      <div class="chip chip-notif"><span class="led"></span>Nova mensagem de Marina</div>
+    </div>
+  </section>
+
+  <section class="features" id="recursos">
+    <div class="wrap feature-grid">
+      <div class="section-head" style="margin-bottom:0;">
+        <span class="eyebrow">RECURSOS</span>
+        <h2>Três camadas de informação, uma única lente</h2>
+        <p>Cada recurso foi pensado para aparecer só quando é útil e sumir quando não é — nada de tela cheia de ícones competindo pela sua atenção.</p>
+      </div>
+
+      <div class="feature-list">
+        <div class="feature-item">
+          <div>
+            <h3>Navegação por GPS na lente</h3>
+            <p>Setas discretas no canto do seu campo de visão indicam a próxima curva, sem precisar olhar para o celular no meio da rua.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div>
+            <h3>Tradução de idiomas em tempo real</h3>
+            <p>Legendas aparecem sobre o que você ouve, em mais de 30 idiomas, com meio segundo de atraso — dá para manter a conversa olho no olho.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div>
+            <h3>Notificações sem tirar o foco</h3>
+            <p>Só as notificações que você escolheu aparecem, por 4 segundos, num canto fixo — o resto fica esperando no celular.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="como-funciona">
+    <div class="section-head">
+      <span class="eyebrow">COMO FUNCIONA</span>
+      <h2>Do primeiro uso à rua em três passos</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">01</div>
+        <h3>Calce e ajuste</h3>
+        <p>Armação leve com três tamanhos de nariz incluídos; o ajuste automático da lente acontece no primeiro piscar de calibração.</p>
+      </div>
+      <div class="step">
+        <div class="num">02</div>
+        <h3>Conecte ao aplicativo</h3>
+        <p>Pareamento por Bluetooth em menos de 10 segundos; escolha ali quais notificações e idiomas quer habilitar.</p>
+      </div>
+      <div class="step">
+        <div class="num">03</div>
+        <h3>Saia e use</h3>
+        <p>GPS, tradução e notificações passam a responder por comando de voz ou por um toque na haste direita.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="specs" id="specs">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">ESPECIFICAÇÕES</span>
+        <h2>Ficha técnica</h2>
+      </div>
+      <table class="spec-table">
+        <tr><td>Peso</td><td>38g</td></tr>
+        <tr><td>Autonomia de bateria</td><td>18h de uso normal / 6h de tradução contínua</td></tr>
+        <tr><td>Conectividade</td><td>Bluetooth 5.3, Wi-Fi 6</td></tr>
+        <tr><td>Resistência</td><td>IPX4 (respinhos de chuva)</td></tr>
+        <tr><td>Idiomas de tradução</td><td>32, com download offline para 8</td></tr>
+        <tr><td>Compatibilidade</td><td>iOS 16+ e Android 12+</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="wrap" id="reservar">
+    <div class="waitlist-box">
+      <div>
+        <h2>Entre na lista de espera</h2>
+        <p>Avisamos por e-mail assim que abrirmos os primeiros lotes de pré-venda, com prioridade para quem entrar antes do lançamento.</p>
+      </div>
+      <div>
+        <form class="waitlist-form" id="waitlistForm" novalidate>
+          <div class="row">
+            <input type="text" id="nameInput" placeholder="Seu nome" required>
+          </div>
+          <div class="row">
+            <input type="email" id="emailInput" placeholder="Seu e-mail" required>
+            <button type="submit" class="btn btn-primary">Entrar</button>
+          </div>
+          <p class="form-status" id="formStatus" aria-live="polite"></p>
+          <p class="form-note">Sem spam. Só um aviso quando as unidades abrirem.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>© 2026 VisionAR Glass — produto conceitual, projeto acadêmico.</span>
+    <span>Atividade: Desenvolvendo a Landing Page</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
